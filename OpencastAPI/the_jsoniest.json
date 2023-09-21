@@ -1,0 +1,212 @@
+[
+    {
+      "mapping": [
+        {
+          "c_b5c1347aefbcd5dc3bacea15e42424f06a126db3381725cc3dc89d8dfa22730e@group.calendar.google.com":"calendar-pyca-305-server",
+          "c_87e838f5189f5c413b71fedfcc8ba654f2b726d30ae794ea41099618638ee44e@group.calendar.google.com":"calendar-pyca-306-server",
+          "c_0569a9b4c89c3ba5270d1b0addd263c1e8a6f91ffab4c98e3db434087825c7dd@group.calendar.google.com":"calendar-pyca-307-server",
+          "c_229676e97fdb2543a027c4d0fa2f2de53ebc14dffb47332457b31765d484f5c3@group.calendar.google.com":"calendar-pyca-308-server",
+          "c_a9a134403eb29b97f105285e3546cffb145c035dd9d3331709d787864e7fabb7@group.calendar.google.com":"calendar-pyca-504-server",
+          "c_2d7c9ec07301cbabb72614b3ad2186482382adea9b8b01a8f0887e15407533c2@group.calendar.google.com":"calendar-pyca-506-server" 
+      }      
+      ],
+      "acl": [
+        {
+          "allow": true,
+          "role": "ROLE_ADMIN",
+          "action": "read"
+        },
+        {
+          "allow": true,
+          "role": "ROLE_ADMIN",
+          "action": "write"
+        },
+        {
+          "allow": true,
+          "role": "ROLE_USER_EVENTS_EXPORTER",
+          "action": "read"
+        },
+        {
+          "allow": true,
+          "role": "ROLE_USER_EVENTS_EXPORTER",
+          "action": "write"
+        },
+        {
+          "allow": true,
+          "role": "ROLE_ANONYMOUS",
+          "action": "read"
+        },
+        {
+          "allow": true,
+          "role": "ROLE_ANONYMOUS",
+          "action": "write"
+        }
+      ],
+      "metadata": [
+        {
+          "flavor": "dublincore/episode",
+          "title": "EVENTS.EVENTS.DETAILS.CATALOG.EPISODE",
+          "fields": [
+            {
+              "readOnly": false,
+              "id": "title",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.TITLE",
+              "type": "text",
+              "value": "test",
+              "required": true
+            },
+            {
+              "readOnly": false,
+              "id": "subjects",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.SUBJECT",
+              "type": "text",
+              "value": [
+                "TestSubject"
+              ],
+              "required": false
+            },
+            {
+              "readOnly": false,
+              "id": "description",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.DESCRIPTION",
+              "type": "text_long",
+              "value": "test",
+              "required": false
+            },
+            {
+              "translatable": true,
+              "readOnly": false,
+              "id": "language",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.LANGUAGE",
+              "type": "text",
+              "value": "",
+              "required": false
+            },
+            {
+              "readOnly": false,
+              "id": "rightsHolder",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.RIGHTS",
+              "type": "text",
+              "value": "",
+              "required": false
+            },
+            {
+              "translatable": true,
+              "readOnly": false,
+              "id": "license",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.LICENSE",
+              "type": "text",
+              "value": "ALLRIGHTS",
+              "required": false
+            },
+            {
+              "translatable": false,
+              "readOnly": false,
+              "id": "isPartOf",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.SERIES",
+              "type": "text",
+              "value": "",
+              "required": false
+            },
+            {
+              "translatable": false,
+              "readOnly": false,
+              "id": "creator",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.PRESENTERS",
+              "type": "mixed_text",
+              "value": [
+                "Google Events Exporter"
+              ],
+              "required": false
+            },
+            {
+              "translatable": false,
+              "readOnly": false,
+              "id": "contributor",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.CONTRIBUTORS",
+              "type": "mixed_text",
+              "value": [
+                ""
+              ],
+              "required": false
+            },
+            {
+              "readOnly": false,
+              "id": "startDate",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.START_DATE",
+              "type": "date",
+              "value": "2022-11-19T05:00:00.000Z",
+              "required": false
+            },
+            {
+              "readOnly": true,
+              "id": "created",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.CREATED",
+              "type": "date",
+              "value": "2022-11-19T05:00:00.000Z",
+              "required": false
+            },
+            {
+              "readOnly": true,
+              "id": "publisher",
+              "label": "EVENTS.EVENTS.DETAILS.METADATA.PUBLISHER",
+              "type": "text",
+              "value": "Google Events Exporter",
+              "required": false
+            },
+            {
+              "id": "source",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "processing": [
+        {
+          "workflow": "",
+          "configuration": {
+            "flagForCutting": "false",
+            "flagForReview": "false",
+            "publishToEngage": "true",
+            "publishToHarvesting": "true",
+            "straightToPublishing": "true"
+          }
+        }
+      ],
+      "scheduling": [
+        {
+          "agent_id": "null",
+          "start": "null",
+          "end": "null"
+        }
+      ],
+      "series_metadata": [
+        [
+          {
+            "flavor": "dublincore/series",
+            "title": "SERIES.SERIES.DETAILS.CATALOG.EPISODE",
+            "fields": [
+              {
+                "readOnly": false,
+                "id": "title",
+                "label": "EVENTS.SERIES.DETAILS.METADATA.TITLE",
+                "type": "text",
+                "value": "sample text",
+                "required": true
+              },
+              {
+                "readOnly": false,
+                "id": "subjects",
+                "label": "EVENTS.SERIES.DETAILS.METADATA.SUBJECT",
+                "type": "text",
+                "value": [
+                  "sample subjects"
+                ],
+                "required": false
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
